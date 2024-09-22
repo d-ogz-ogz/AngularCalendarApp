@@ -1,0 +1,37 @@
+
+
+  <div class="calendar">
+    <div class="header">
+      <button (click)="previousMonth()">&#8592;</button>
+      <h2>{{ months[currentMonth] }} {{ currentYear }}</h2>
+      <button (click)="nextMonth()">&#8594;</button>
+    </div>
+
+    <div class="days">
+      <div *ngFor="let day of daysInMonth" (click)="openPopup(day)"
+           class="day"
+           [class.today]="isToday(day)">
+        {{ day }}
+        <div *ngFor="let note of getNotesForDay(day)" class="note">
+          <strong>{{ note.title }}</strong>: {{ note.content }}
+        </div>
+      </div>
+    </div>
+
+    <!--POP UP-->
+    <div class="popup" *ngIf="isPopupVisible">
+      <div class="popup-content p-4">
+        <label>Title</label>
+        <input [(ngModel)]="noteModel.title" type="text" placeholder="Example Title" />
+        <label>Content</label>
+        <textarea style="resize:none" [(ngModel)]="noteModel.content" placeholder="Example Content" rows="20" cols="80">  </textarea>
+        <div class="popup-actions">
+          <button (click)="saveNote()">Save</button>
+          <button (click)="closePopup()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

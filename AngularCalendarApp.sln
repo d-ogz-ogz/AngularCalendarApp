@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularCalendarApp.Server", "AngularCalendarApp.Server\AngularCalendarApp.Server.csproj", "{DE828470-2E47-427F-9CBE-63246111DB17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A05AC20-38CD-4681-8CD0-55915E99AA08} = {1A05AC20-38CD-4681-8CD0-55915E99AA08}
+	EndProjectSection
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularcalendarapp.client", "angularcalendarapp.client\angularcalendarapp.client.esproj", "{F364642E-7BD1-4EC4-B452-40662237CDDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DOMAIN", "DATA\DOMAIN.csproj", "{1A05AC20-38CD-4681-8CD0-55915E99AA08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BUSINESS", "BUSINESS\BUSINESS.csproj", "{4ABBDF39-44B3-4CE7-A738-C71F238DA283}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHARED", "SHARED\SHARED.csproj", "{4F7C45A9-9255-4065-8000-4F6F685C63A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE828470-2E47-427F-9CBE-63246111DB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE828470-2E47-427F-9CBE-63246111DB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE828470-2E47-427F-9CBE-63246111DB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE828470-2E47-427F-9CBE-63246111DB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F364642E-7BD1-4EC4-B452-40662237CDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F364642E-7BD1-4EC4-B452-40662237CDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F364642E-7BD1-4EC4-B452-40662237CDDA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F364642E-7BD1-4EC4-B452-40662237CDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F364642E-7BD1-4EC4-B452-40662237CDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F364642E-7BD1-4EC4-B452-40662237CDDA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1A05AC20-38CD-4681-8CD0-55915E99AA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A05AC20-38CD-4681-8CD0-55915E99AA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A05AC20-38CD-4681-8CD0-55915E99AA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A05AC20-38CD-4681-8CD0-55915E99AA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABBDF39-44B3-4CE7-A738-C71F238DA283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABBDF39-44B3-4CE7-A738-C71F238DA283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABBDF39-44B3-4CE7-A738-C71F238DA283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABBDF39-44B3-4CE7-A738-C71F238DA283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7C45A9-9255-4065-8000-4F6F685C63A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7C45A9-9255-4065-8000-4F6F685C63A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7C45A9-9255-4065-8000-4F6F685C63A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7C45A9-9255-4065-8000-4F6F685C63A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76CA50B9-F0BA-4D8B-ABBC-885688194318}
+	EndGlobalSection
+EndGlobal

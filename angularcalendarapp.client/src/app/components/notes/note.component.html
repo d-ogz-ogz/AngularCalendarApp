@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+
+      margin: 0;
+      padding: 20px;
+    }
+
+    .note-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+      align-items: flex-start; 
+    }
+
+    .note {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 8px 12px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      width: 100%; 
+    }
+
+      .note:hover {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+    .note-title {
+      font-size: 16px; 
+      font-weight: bold;
+      margin: 0;
+      padding-bottom: 4px; 
+      border-bottom: 1px solid #eee;
+    }
+
+    .note-content {
+      font-size: 13px; 
+      margin-top: 6px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notes</h1>
+  <h1 (click)="getTodayNotes()" class="text-danger"> Today's Notes</h1>
+  <div class="note-container " style="border:1px solid red">
+    <div class="note" *ngFor="let tNote of noteService.todayNotes">
+      <h2 class="note-title">{{tNote.title}}</h2>
+      <p class="note-content">{{tNote.content}}</p>
+    </div>
+  </div>
+  <div class="note-container ">
+    <div class="note" *ngFor="let note of noteService.Notes">
+      <h2 class="note-title">{{note.title}}</h2>
+      <p class="note-content">{{note.content}}</p>
+      <small>{{note.adding }}</small>
+    </div>
+
+  </div>
+</body>
+</html>
